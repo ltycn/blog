@@ -11,5 +11,6 @@ tags: WindowsUpdate
 
 ![](microsoftpartnercenter.png)
 ![](search.png)
-![](button.png)
 ![](newshipinglablebutton.png)
+![](newshippinglable.png)
+
