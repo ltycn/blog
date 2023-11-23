@@ -6,7 +6,7 @@ tags: DUA
 
 
 {% note info modern %}
-微软官方文档：https://learn.microsoft.com/en-us/windows-hardware/test/hlk/user/create-a-driver-only-update-package
+微软官方文档：[Create a driver only update package](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/user/create-a-driver-only-update-package)
 {% endnote %}
 
 ![](download-dua.png)
@@ -15,4 +15,4 @@ tags: DUA
 ![](dua-3.png)
 ![](dua-4.png)
 ![](upload-dua.png)
-{% asset_img download-dua.png This is an example image %}
+
