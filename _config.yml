@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Terry's Blog
+title: Terry's Base
 subtitle: '多读书，多看报，少吃零食多睡觉'
 description: ''
 keywords:
-author: TERRY
+author: 刘天义
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://blog.terry.ee
+url: http://terry.ee
 permalink: posts/:abbrlink/
 abbrlink:
     alg: crc32   #算法： crc16(default) and crc32
