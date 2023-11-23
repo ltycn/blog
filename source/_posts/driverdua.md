@@ -10,6 +10,24 @@ tags: DUA
 {% endnote %}
 
 # 什么是DUA
+Driver Update Acceptable (DUA) 还不知道中文怎么翻译。可针对不同种类的计算机定做客制化INF，方便源头Driver开发者分发相同的驱动程序给不同的OEM，而不需要再通过HLK进行验证。
+
+
+{% note warning modern %}
+注意：
+DUA 提交不允许使用以下文件类型：
+
+.exe
+.dll
+.sys
+可接受的典型文件类型包括：
+
+.inf
+.txt
+.pdf
+.prd
+{% endnote %}
+
 
 # 下载DUA Shell
 ![](download-dua.png)
