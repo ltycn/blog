@@ -12,4 +12,4 @@ tags: WindowsUpdate
 ![](microsoftpartnercenter.png)
 ![](search.png)
 ![](button.png)
-![](newshippinglable.png)
+![](newshipinglablebutton.png)
