@@ -15,3 +15,4 @@ tags: DUA
 ![](dua-3.png)
 ![](dua-4.png)
 ![](upload-dua.png)
+{% asset_img download-dua.png This is an example image %}
