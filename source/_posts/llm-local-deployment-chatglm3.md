@@ -35,7 +35,7 @@ ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话�
 
 依据官网文档，项目需要Python 3.10或更高版本的支持。此处我们直接使用winget安装python 3.11
 
-```
+```Batch
 winget install Python.Python.3.11
 ```
 
@@ -48,7 +48,7 @@ https://developer.nvidia.com/cuda-downloads
 
 请根据自己显卡所支持的CUDA版本选择CUDA安装包（使用nvidia-smi命令检查CUDA Version）
 
-```
+```Batch
 winget install Nvidia.CUDA
 ```
 
@@ -60,7 +60,9 @@ https://git-scm.com/download/win
 
 直接使用winget安装Git
 
-```winget install Git.Git```
+```Batch
+winget install Git.Git
+```
 
 ![](winget-install-git.png)
 
@@ -70,7 +72,9 @@ https://docs.conda.io/en/latest/
 
 anaconda是一个环境管理工具，直接使用winget安装anaconda
 
-```winget install Anaconda.Anaconda3```
+```Batch
+winget install Anaconda.Anaconda3
+```
 
 ## 模型准备
 
@@ -80,7 +84,9 @@ anaconda是一个环境管理工具，直接使用winget安装anaconda
 
 打开一个你想要将项目放入的路径
 
-```git clone https://github.com/THUDM/ChatGLM3.git```
+```Batch
+git clone https://github.com/THUDM/ChatGLM3.git
+```
 
 cd Chat
 
@@ -88,11 +94,17 @@ cd Chat
 
 在项目文件夹中创建Models目录
 
-```git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b.git```
+```Batch
+git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b.git
+```
 
-```git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-base.git```
+```Batch
+git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-base.git
+```
 
-```git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-32k.git```
+```Batch
+git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-32k.git
+```
 
 ## 部署
 
@@ -100,8 +112,13 @@ cd Chat
 
 由于requirements.txt默认安装的依赖中pytorch的版本不正确，所以我们需要重新选择正确的版本进行安装。
 
-```conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia```
-```pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121```
+```Batch
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+
+```Batch
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
 
 
 
