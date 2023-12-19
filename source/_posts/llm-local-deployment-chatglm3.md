@@ -1,5 +1,5 @@
 ---
-title: llm-local-deployment-chatglm3
+title: 本地部署大语言模型ChatGLM3-6B
 date: 2023-12-19 15:33:37
 tags:
 ---
