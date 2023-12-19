@@ -22,7 +22,8 @@ ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话�
 
 默认情况下，运行chatglm3-6b模型需要用到显存不低于13GB的显卡，如果 GPU 显存有限，可以尝试以量化方式或多显卡部署的方法加载模型
 
-![](nvidia-smi.png)
+![]()
+<img src="nvidia-smi.png" width="70%" height="70%">
 
 ### 安装NVDriver
 
@@ -37,6 +38,7 @@ ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话�
 `winget install Python.Python.3.11`
 
 ![](winget-install-python.png)
+
 
 ### 安装CUDA
 
