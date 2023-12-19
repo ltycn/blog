@@ -120,13 +120,14 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
+在安装完成后，需要确保运行`torch.cuda.is_available()`时结果为`True`，才可以在GPU上运行模型。否则默认使用CPU
 
-
-
-
+<img src="torch-cuda-avaliable.png" width="70%" height="70%">
 
 
 ### 部署为命令行
+
+<img src="demo-cli" width="70%" height="70%">
 
 ### 部署为网页版
 
