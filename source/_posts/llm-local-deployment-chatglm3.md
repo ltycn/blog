@@ -22,24 +22,24 @@ ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话�
 
 默认情况下，运行chatglm3-6b模型需要用到显存不低于13GB的显卡，如果 GPU 显存有限，可以尝试以量化方式或多显卡部署的方法加载模型
 
-![]()
+
 <img src="nvidia-smi.png" width="70%" height="70%">
 
 ### 安装NVDriver
 
 可以在Nvidia官网，或通过Windows Update安装最新Nvidia显卡驱动
 
-![](wu-check.png)
+<img src="wu-check.png" width="70%" height="70%">
 
 ### 安装Python
 
 依据官网文档，项目需要Python 3.10或更高版本的支持。此处我们直接使用winget安装python 3.11
 
-```Batch
+```Bash
 winget install Python.Python.3.11
 ```
 
-![](winget-install-python.png)
+<img src="winget-install-python.png" width="70%" height="70%">
 
 
 ### 安装CUDA
@@ -48,11 +48,11 @@ https://developer.nvidia.com/cuda-downloads
 
 请根据自己显卡所支持的CUDA版本选择CUDA安装包（使用nvidia-smi命令检查CUDA Version）
 
-```Batch
+```Bash
 winget install Nvidia.CUDA
 ```
 
-![](winget-install-cuda.png)
+<img src="winget-install-cuda.png" width="70%" height="70%">
 
 ### 安装Git
 
@@ -60,11 +60,11 @@ https://git-scm.com/download/win
 
 直接使用winget安装Git
 
-```Batch
+```Bash
 winget install Git.Git
 ```
 
-![](winget-install-git.png)
+<img src="winget-install-git.png" width="70%" height="70%">
 
 ### 安装conda
 
@@ -72,7 +72,7 @@ https://docs.conda.io/en/latest/
 
 anaconda是一个环境管理工具，直接使用winget安装anaconda
 
-```Batch
+```Bash
 winget install Anaconda.Anaconda3
 ```
 
@@ -84,7 +84,7 @@ winget install Anaconda.Anaconda3
 
 打开一个你想要将项目放入的路径
 
-```Batch
+```Bash
 git clone https://github.com/THUDM/ChatGLM3.git
 ```
 
@@ -94,15 +94,15 @@ cd Chat
 
 在项目文件夹中创建Models目录
 
-```Batch
+```Bash
 git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b.git
 ```
 
-```Batch
+```Bash
 git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-base.git
 ```
 
-```Batch
+```Bash
 git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-32k.git
 ```
 
@@ -112,11 +112,11 @@ git clone https://www.modelscope.cn/ZhipuAI/chatglm3-6b-32k.git
 
 由于requirements.txt默认安装的依赖中pytorch的版本不正确，所以我们需要重新选择正确的版本进行安装。
 
-```Batch
+```Bash
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 
-```Batch
+```Bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
